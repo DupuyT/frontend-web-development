@@ -1,12 +1,12 @@
 body{
-    background-color: gray;
-    margin: 0;
+    background-color: #eafdf8;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
 .top-nav{
     background-color: black;
-    height: 3rem;
+    height: 3.1rem;
 }
 .top-nav a {
     float: left;
@@ -36,66 +36,50 @@ body{
     grid-row-gap: 1.25rem;
 }
 
-.flex-first-container{
+.assignments-container{
+    margin: 10rem;
+    width: auto;
+    height: auto;
+    display:grid;
+    grid-row-gap: 1.25rem;
+}
+
+.projects-container{
+    margin: 10rem;
+    width: auto;
+    height: auto;
+    display:grid;
+    grid-row-gap: 1.25rem;
+}
+
+.flex-container{
     display: inline-flex;
     border-style: solid;
     border-color: black;
     border-width: .5rem;
     border-radius: 2rem;
-    background-color: lightblue;
+    background-color: white;
     align-items: center;
     justify-content: center;
     padding: 1rem;
 }
 
 #flex-first-item{  
-    color: black; 
-}
-
-.flex-second-container{
-    display: inline-flex;
-    border-style: solid;
-    border-color: black;
-    border-width: .5rem;
-    border-radius: 2rem;
-    background-color: lightgreen;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
+    color: #51344d;
+    font-weight: bolder; 
 }
 
 #flex-second-item{
-    color: black;
-}
-
-.flex-third-container{
-    display: inline-flex;
-    border-style: solid;
-    border-color: black;
-    border-width: .5rem;
-    border-radius: 2rem;
-    background-color: lightyellow;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
+    color: #c8ad55;
+    font-weight: bolder;
 }
 
 #flex-third-item{
-    color: black;
-}
-
-.flex-fourth-container{
-    display: inline-flex;
-    border-style: solid;
-    border-color: black;
-    border-width: .5rem;
-    border-radius: 2rem;
-    background-color: lightcoral;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
+    color: #a3320b;
+    font-weight: bolder;
 }
 
 #flex-fourth-item{
-    color: black;
+    color: #2d728f;
+    font-weight: bolder;
 }

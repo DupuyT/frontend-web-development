@@ -25,6 +25,11 @@ body{
     color: white;
 }
 
+/* .heading{
+    margin: 0 auto;
+    text-align: center;
+} */
+
 .container{
     margin: 10rem;
     width: auto;

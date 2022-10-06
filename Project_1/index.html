@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Assignment 4 - JSON and the API</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2: BlackJack</title>
     <meta charset="UTF-8" />
     <link href="main.css" rel="stylesheet">
     <script src="main.js"></script>
   </head>
   <body>
-    
+    <h2>Dealer: <span id="dealer-sum"></span></h2>
+    <div id="dealer-cards">
+      <img id="hidden" src="../cards/BACK.png">
+    </div>
+
+    <h2>You: <span id="your-sum"></span></h2>
+    <div id="your-cards"></div>
+
+    <br>
+    <button id="hit">Hit</button>
+    <button id="stay">Stay</button>
+    <form>
+      <input value="Restart Game" onclick="history.go(0)" type="button">
+    </form>
+    <p id="results"></p>
   </body>
   </html>

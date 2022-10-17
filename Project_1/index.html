@@ -5,6 +5,9 @@
     <title>Project 2: BlackJack</title>
     <meta charset="UTF-8" />
     <link href="main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="main.js"></script>
   </head>
   <body>
@@ -15,20 +18,23 @@
       <a href="https://taylordupuy.com/process-blog/">Process Journal</a>
       <a href="https://github.com/DupuyT/frontend-web-development">Code</a><br>
   </nav>
-    <h2>Dealer: <span id="dealer-sum"></span></h2>
-    <div id="dealer-cards">
+  <div class="container">
+    <div class="panel panel-default"><div class="panel-heading"><h2>Dealer: <span id="dealer-sum"></span></h2></div>
+    <div class="col-12" id="dealer-cards">
       <img id="hidden" src="../cards/BACK.png">
-    </div>
+    </div></div>
 
-    <h2>You: <span id="your-sum"></span></h2>
-    <div id="your-cards"></div>
+    <div class="panel panel-default"><div class="panel-heading"><h2>You: <span id="your-sum"></span></h2></div>
+    <div class = "panel"><div class="col-12" id="your-cards">
+    </div></div></div>
 
     <br>
-    <button id="hit">Hit</button>
-    <button id="stay">Stay</button>
-    <form>
-      <input value="Restart Game" onclick="history.go(0)" type="button">
-    </form>
-    <p id="results"></p>
+    <div class = "w-25">
+    <div class= "btn-group btn-group-justified"><div class = "btn-group"><button class="btn btn-default btn-lg" id="hit">Hit</button></div>
+    <div class = "btn-group"><button class="btn btn-default btn-lg" id="stay">Stay</button></div></div>
+    <div class= "btn-group btn-group-justified"><div class = "btn-group"><button class="btn btn-default btn-lg" id="new-game">New Game</button></div>
+    <div class= "btn-group"><button class="btn btn-default btn-lg" id="place-bet">Place Bet</button></div></div></div>
+    <h1 id="results"></h1>
+  </div>
   </body>
   </html>

@@ -10,7 +10,8 @@ let deck;
 let canHit=true;
 
 let dealerCount = 0;
-let chips = 0;
+let chips = 50;
+let poolChips = 0;
 
 
 
@@ -19,7 +20,10 @@ window.onload = function(){
     document.getElementById("hit").addEventListener("click", hit);
     document.getElementById("stay").addEventListener("click", stay);
     document.getElementById("new-game").addEventListener("click", NextGame);
+    document.getElementById("start-game").addEventListener("click", startGame);
     document.getElementById("place-bet").addEventListener("click", PlaceBet);
+    document.getElementById("your-chips").innerText = chips;
+    document.getElementById("pool-chips").innerText = poolChips;
 }
 
 function NextGame(){
@@ -30,9 +34,16 @@ function NextGame(){
 
 
 function PlaceBet(){
-
+    if (chips <= 0){
+        return;
+    }
     
-    startGame();
+    if (chips > 0){
+        chips += -5;
+        poolChips += 5;
+        document.getElementById("your-chips").innerText = chips;
+        document.getElementById("pool-chips").innerText = poolChips;
+    }
 }
 
 function ClearHands(){
@@ -54,7 +65,7 @@ function ClearHands(){
     yourAceCount = 0;
     canHit = true;
     message = '';
-
+    
     document.getElementById("hidden").src = "../cards/BACK.png";
     document.getElementById("hidden").hidden = true;
     document.getElementById("dealer-sum").innerText = '';
@@ -152,14 +163,19 @@ function stay(){
     }
     else if (dealerSum > 21 || (dealerSum > 16 && yourSum > dealerSum)){
         message = "You Win!";
+        chips += (poolChips * 2);
     }
     else if (dealerSum == yourSum){
         message = "Tie!";
+        chips += poolChips;
     }
     else if (yourSum < dealerSum){
         message = "You Lose!";
     }
-
+    
+    poolChips = 0;
+    document.getElementById("your-chips").innerText = chips;
+    document.getElementById("pool-chips").innerText = poolChips;
     document.getElementById("dealer-sum").innerText = dealerSum;
     document.getElementById("your-sum").innerText = yourSum;
     document.getElementById("results").innerText = message;

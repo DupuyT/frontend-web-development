@@ -1,5 +1,24 @@
 {
   "dependencies": {
-    "esbuild": "^0.15.12"
-  }
+    "esbuild": "^0.15.12",
+    "http-server": "^14.1.1",
+    "parcel": "^2.7.0"
+  },
+  "name": "frontend-web-development",
+  "description": "Repository for all ATLS 5630 projects.",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "serve": "npm http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DupuyT/frontend-web-development.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DupuyT/frontend-web-development/issues"
+  },
+  "homepage": "https://github.com/DupuyT/frontend-web-development#readme"
 }

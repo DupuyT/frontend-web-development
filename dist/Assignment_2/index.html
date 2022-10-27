@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 2: Forms</title>
+        <meta charset="UTF-8">
+        <link href="/Assignment_2/index.a3e3263e.css" rel="stylesheet">
+        <script defer="" src="/Assignment_2/index.983a8cfc.js"></script>
+    </head>
+    <body>
+        <nav class="top-nav">
+            <a href="/index.html">Home</a>
+            <a class="active" href="/assignments.html">Assignments</a>
+            <a href="/projects.html">Projects</a>
+            <a href="https://taylordupuy.com/process-blog/">Process Journal</a>
+            <a href="https://github.com/DupuyT/frontend-web-development">Code</a><br>
+        </nav>
+        <form action="my-form" method="post">
+            <ul id="settings">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name">
+                </div>
+                <div>
+                    <label for="mail">Email:</label>
+                    <input type="email" id="mail" name="user_email">
+                </div>
+                <div>
+                    <label for="message">Description of Request:</label>
+                    <textarea id="message" name="user_message"></textarea>
+                </div>
+                <div>
+                    <label for="tel">CallBack Number:</label>
+                    <input type="tel" id="tel" name="tel">
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>
+                            What keywords best describes your business?
+                        </legend>
+                            <div>
+                                <input type="checkbox" id="dependable" name="keyword" value="dependable">
+                                <label for="dependable">Dependable</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="progressive" name="keyword" value="progressive">
+                                <label for="progressive">Progressive</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="traditional" name="keyword" value="traditional">
+                                <label for="Traditional">Traditional</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="edgy" name="keyword" value="edgy">
+                                <label for="edgy">Edgy</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="authentic" name="keyword" value="authentic">
+                                <label for="authentic">Authentic</label>
+                            </div>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>
+                            What type of service are you looking for?
+                        </legend>
+                            <div>
+                                <input type="radio" id="rebrand" name="service" value="rebrand">
+                                <label for="rebrand">Rebrand</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="touchup" name="service" value="touchup">
+                                <label for="touchup">Touch Up</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="newbrand" name="service" value="newbrand">
+                                <label for="newbrand">New Brand</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="other" name="service" value="other">
+                                <label for="other">Other</label>
+                                <div>
+                                  <textarea id="other" name="other_message">If other, please explain.</textarea>  
+                                </div>
+                            </div>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>
+                            What color will be the background when you submit?
+                        </legend>
+                            <div>
+                                <input type="radio" id="hotpink" name="color" value="hotpink">
+                                <label for="hotpink">Hot Pink</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="gold" name="color" value="gold">
+                                <label for="gold">Gold</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="purple" name="color" value="purple">
+                                <label for="purple">Purple</label>
+                            </div>
+                    </fieldset>
+                </div>
+                <div>
+                    <button onclick="Button()" class="button-style" type="button">Submit Request</button>
+                </div>
+            </ul>
+        </form>
+    <script src="/Assignment_2.ec723a7f.js"></script></body>
+    </html>

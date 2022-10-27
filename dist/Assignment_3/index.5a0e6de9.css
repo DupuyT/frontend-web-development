@@ -1,0 +1,79 @@
+body {
+  background-color: #fefaf6;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.2;
+  display: block;
+}
+
+header {
+  vertical-align: middle;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 1px #ffffff80;
+  letter-spacing: 2px;
+  background-color: #1b2d5e;
+  padding: 10px 0 5px;
+  font-size: 200%;
+  position: fixed;
+  top: 0;
+}
+
+.wrapper {
+  margin-top: 100px;
+}
+
+.main {
+  border-bottom: 1px solid #ffffff80;
+  padding-bottom: 1em;
+}
+
+.main h1 {
+  color: #646464;
+  text-shadow: 1px 1px 1px #fff;
+  border-bottom: 1px solid #646464;
+  margin-bottom: .5em;
+  font-size: 160%;
+  font-weight: normal;
+}
+
+.content {
+  max-width: 760px;
+  margin: 0 auto;
+  position: relative;
+}
+
+footer {
+  width: 100%;
+  background-color: #1b2d5e;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+footer p {
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  padding: .5em .25em .5em 1em;
+  font-family: Arial, sans-serif;
+  font-size: 90%;
+}
+
+footer a {
+  color: #c8c8c8;
+}
+
+p {
+  color: #646464;
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 120%;
+  line-height: 125%;
+}
+
+/*# sourceMappingURL=index.5a0e6de9.css.map */

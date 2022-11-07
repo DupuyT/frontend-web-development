@@ -1,3 +1,1 @@
-import { say } from 'cowsay';
-
-console.log(say({ text: 'grazing in the browser' }));
+import collection from 'easter-egg-collection'

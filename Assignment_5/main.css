@@ -5,10 +5,9 @@ body{
 
 .top-nav{
     background-color: black;
-    height: 3.1rem;
+    padding: 1rem;
 }
 .top-nav a {
-    float: left;
     color: #f2f2f2;
     text-align: center;
     padding: 1rem;
@@ -22,4 +21,20 @@ body{
 .top-nav a.active {
     background-color: lightslategray;
     color: white;
+}
+
+#title{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+td, th{
+    border: 1px solid #999;
+    padding: 0.5rem;
+}
+
+#newtable{
+    display: flex;
+    justify-content: center;
 }

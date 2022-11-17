@@ -3,7 +3,8 @@
     "cowsay": "^1.5.0",
     "esbuild": "^0.15.12",
     "http-server": "^14.1.1",
-    "parcel": "^2.7.0"
+    "parcel": "^2.7.0",
+    "three": "^0.146.0"
   },
   "name": "frontend-web-development",
   "description": "Repository for all ATLS 5630 projects.",

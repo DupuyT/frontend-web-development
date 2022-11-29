@@ -10,6 +10,15 @@
   "license": "ISC",
   "dependencies": {
     "parcel": "^2.8.0",
-    "three": "^0.146.0"
+    "three": "^0.146.0",
+    "three-orbit-controls": "^82.1.0",
+    "three-orbitcontrols": "^2.110.3",
+    "three-terrain": "^0.0.10",
+    "three.terrain.js": "^2.0.0"
+  },
+  "devDependencies": {
+    "buffer": "^5.7.1",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10"
   }
 }

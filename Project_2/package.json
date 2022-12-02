@@ -4,11 +4,13 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "dev": "npx parcel index.html"
+    "dev": "npx parcel index.html",
+    "deploy": "gh-pages -d App"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "parcel": "^2.8.0",
     "three": "^0.146.0",
     "three-orbit-controls": "^82.1.0",
